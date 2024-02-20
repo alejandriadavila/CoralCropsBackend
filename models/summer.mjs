@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const summerSchema = new mongoose.Schema({
+const summerCropSchema = new mongoose.Schema({
     id: Number,
     name: String,
     type: String,
@@ -11,4 +11,4 @@ const summerSchema = new mongoose.Schema({
     imgUrl: String
 })
 
-export default mongoose.model("Summer", summerSchema)
+export default mongoose.model("Summer", summerCropSchema)

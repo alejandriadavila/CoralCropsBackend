@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const fallSchema = new mongoose.Schema({
+const fallCropSchema = new mongoose.Schema({
     id: Number,
     name: String,
     type: String,
@@ -11,4 +11,4 @@ const fallSchema = new mongoose.Schema({
     imgUrl: String
 })
 
-export default mongoose.model("Fall", fallSchema)
+export default mongoose.model("Fall", fallCropSchema)

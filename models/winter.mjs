@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const winterSchema = new mongoose.Schema({
+const winterCropSchema = new mongoose.Schema({
     id: Number,
     name: String,
     type: String,
@@ -11,4 +11,4 @@ const winterSchema = new mongoose.Schema({
     imgUrl: String
 })
 
-export default mongoose.model("Winter", winterSchema)
+export default mongoose.model("Winter", winterCropSchema)

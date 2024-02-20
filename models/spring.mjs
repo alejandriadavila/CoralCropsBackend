@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const springSchema = new mongoose.Schema({
+const springCropSchema = new mongoose.Schema({
     id: Number,
     name: String,
     type: String,
@@ -11,4 +11,4 @@ const springSchema = new mongoose.Schema({
     imgUrl: String
 })
 
-export default mongoose.model("Spring", springSchema)
+export default mongoose.model("Spring", springCropSchema)
