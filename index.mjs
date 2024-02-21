@@ -28,11 +28,13 @@ import fall from "./routes/fall.mjs"
 import spring from "./routes/spring.mjs"
 import summer from "./routes/summer.mjs"
 import winter from "./routes/winter.mjs"
+import toDo from "./routes/toDo.mjs"
 
 app.use("/fall", fall)
 app.use("/spring", spring)
 app.use("/summer", summer)
 app.use("/winter", winter)
+app.use("/toDo", toDo)
 
 // Global error handling
 app.use((err, _req, res, next) => {
