@@ -38,7 +38,8 @@ app.use("/toDo", toDo)
 
 // Global error handling
 app.use((err, _req, res, next) => {
-
+    res.status(err.status || 500)
+    res.json({error: err.message})
 })
 
 app.listen(PORT, () => {
