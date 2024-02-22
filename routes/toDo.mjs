@@ -27,7 +27,7 @@ router
             }
             await ToDo.push(crop)
             res.send("Crop added to Crop Planner")
-        }else next(error(400, "Insufficient Data"))
+        }else res.send(`Error: 400 Insufficient Data`)
     })
 
 router
